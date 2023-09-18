@@ -4,7 +4,7 @@
  * print_string - Prints a string to stdout
  * @args: A va_list containing the string to print
  *
- * Return: The number of characters printed
+ * Return: the number  of characters printed
  */
 int print_string(va_list args)
 {

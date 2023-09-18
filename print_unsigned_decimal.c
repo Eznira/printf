@@ -2,9 +2,9 @@
 
 /**
  * _print_un_deci_helper - Recursively prints an unsigned integer
- * @num: The unsigned integer to print
+ * @num: the unsigned integer to print
  *
- * Return: The number of characters printed
+ * Return: the number of characters printed
  */
 int _print_un_deci_helper(unsigned int num)
 {
