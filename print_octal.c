@@ -4,7 +4,7 @@
  * print_octal - Prints an unsigned integer in octal to stdout
  * @args: A va_list containing the unsigned integer to print
  *
- * Return: The number of characters printed
+ * Return: the number of characters printed
  */
 int print_octal(va_list args)
 {
