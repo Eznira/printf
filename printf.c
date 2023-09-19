@@ -38,6 +38,7 @@ int _printf(const char *str, ...)
 
 		str++;
 	}
+	va_end(arg_list);
 
 	return (count_char);
 }
