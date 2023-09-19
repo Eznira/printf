@@ -14,6 +14,10 @@ int _printf(const char *str, ...)
 
 	va_start(arg_list, str);
 
+	if (str == NULL)
+	{
+		return (-1);
+	}
 	while (*str)
 	{
 		if (*str == '%')
