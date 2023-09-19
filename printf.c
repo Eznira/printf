@@ -15,9 +15,11 @@ int _printf(const char *str, ...)
 	va_start(arg_list, str);
 
 	if (str == NULL)
-	{
 		return (-1);
-	}
+	if (!str || (str[0] == '%' && !str[1]))
+		return (-1);
+	if (str[0] == '%' && str[1] == ' ' && !str[2])
+		return (-1);
 	while (*str)
 	{
 		if (*str == '%')
@@ -30,7 +32,7 @@ int _printf(const char *str, ...)
 				{
 					count_char += conv_specifier_map[i].
 						print_conv(arg_list);
-						break;
+					break;
 				}
 			}
 		}
